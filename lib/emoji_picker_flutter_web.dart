@@ -3,7 +3,6 @@
 // package as the core of your plugin.
 // ignore: avoid_web_libraries_in_flutter
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:web/web.dart' as html show window;
 
 import 'emoji_picker_platform_interface.dart';
 
@@ -20,7 +19,6 @@ class EmojiPickerFlutterPluginWeb extends EmojiPickerPlatform {
   /// Returns a [String] containing the version of the platform.
   @override
   Future<String?> getPlatformVersion() async {
-    final version = html.window.navigator.userAgent;
-    return version;
+    return "";
   }
 }
